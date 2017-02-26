@@ -1,0 +1,18 @@
+<div class = "container">
+  <div class="wrapper">
+    <div  class="form-signin">
+      <h3 class="form-signin-heading">Sign Up</h3>
+      <hr class="colorgraph"><br> 
+      <form  ng-submit="signup()">
+        <input ng-model="user.username" type="text" id="userName" class="form-control" name="Username" placeholder="user name" required="" autofocus="" />
+        <input ng-model="user.password" type="password" id="password" class="form-control" name="Password" placeholder="password" required=""/>  
+        <input ng-model="user.confirmpassword" type="password" class="form-control" name="Password" placeholder="confirm password" required=""/>  
+        <button class="btn btn-primary btn-block" type="submit"  style="margin-top: : 5px">Sign Up</button>
+
+        <div ng-show="err" class="alert alert-danger">
+          <strong>Error!</strong> {{message}}
+        </div>
+      </form> 
+      <d5>hava an account <a href="/#!/signin">signin</a></d5>
+    </div>     
+  </div>

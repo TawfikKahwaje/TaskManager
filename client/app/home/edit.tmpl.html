@@ -1,0 +1,24 @@
+<div style="margin: 10px">
+<md-content class="md-no-momentum">
+	<md-input-container class="md-icon-float md-block">
+		<label>Label</label>
+		<input ng-model="editTask.label" type="text">
+	</md-input-container>
+
+	<md-input-container md-no-float class="md-block">
+		<label>Description</label>
+		<input ng-model="editTask.description" type="text">
+	</md-input-container>
+</md-content>
+<md-dialog-actions layout="row">
+  <span flex></span>
+    <md-button ng-click="cancel()">
+  	Cancel
+  </md-button>
+  <md-button ng-click="edit(task)">
+   	Edit
+  </md-button>
+
+</md-dialog-actions>
+	 
+</div>
