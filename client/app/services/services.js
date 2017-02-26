@@ -24,7 +24,7 @@ angular.module('Task.services',[])
 		},
 		isAuth: function () {
 			var token = $window.localStorage['token'];
-			if(token === 'null' || token === 'undefined' || token === '')
+			if(token === 'null' || token === 'undefined' || token === '' || token === undefined || token === null)
 				return false;
 			else 
 				return true
